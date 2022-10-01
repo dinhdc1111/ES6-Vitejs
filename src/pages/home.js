@@ -1,0 +1,6 @@
+const HomePage = {
+    render() { // method render()
+        return `<h1>Home Page</h1>`;
+    },
+};
+export default HomePage;
