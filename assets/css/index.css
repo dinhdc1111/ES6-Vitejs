@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gray-color: rgba(93, 93, 93, 1);
+    --red-color : rgba(245, 71, 72, 1);
+    --white-color : rgba(255, 255, 255, 1);
+    --pink-color : rgba(255, 238, 238, 1);
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.wapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    margin-top: 32px;
+}
+.menu{
+    margin-top: 48.5px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+}
+.menu ul .menu-link{
+    color: var(--gray-color);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+}
+.menu ul .menu-link:hover{
+    color: var(--red-color);
+}
+.header__cartAuth{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.cart{
+    margin-top: 29px;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-top: 36px;
+}
+.auth a{
+    text-decoration: none;
+}
+.signin,
+.signup{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.94px;
+    padding: 12px 13px 15px 16px;
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    letter-spacing: 0.005em;
+    /* GetCSSScan */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.auth .signup:hover,
+.signin{
+    background-color: var(--white-color);
+    color: var(--red-color);
+}
+.auth .signin:hover,
+.signup{
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+/* Banner CSS*/
+.banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 40px;
+    margin-top: 61px;
+}
+.banner__content{
+    margin-top: 56px;
+}
+.button--primary{
+    text-decoration: none;
+    color: var(--red-color);
+    background-color: var(--pink-color);
+    padding: 11px 25px 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.button--primary:hover{
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--red-color);
+}
+.banner__content-heading{
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100px;
+    max-width:506px ;
+    max-height: 300px;
+    margin-top: 15px;
+}
+.banner__content-heading span{
+    color: var(--red-color);
+}
+.banner__content-decs{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 33px 0;
+}
+.banner__search{
+    display: flex;
+    align-items: center;
+}
+.banner__search-input{
+    max-width: 306px;
+    max-height: 62px;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    border: 1px solid var(--red-color);
+}
+.banner__search-button{
+    height: 62px;
+    width: 158px;
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+    color: var(--white-color);
+    border-radius: 0 10px 10px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+/* Our Popular Dishes CSS */
+.Popular_Dishes{
+    margin-top: 96.68px;
+}
+.Popular_Dishes__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+.Popular_Dishes__desc{
+    font-weight: 400;
+    width: 706px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin: 24px auto 0px;
+}
+.Popular_Dishes__content-images{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 40px;
+    margin-top: 60px;
+}
+.dishes-item__image{
+    border-radius: 20px;
+}
+.dishes-item__title a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--red-color);
+    margin: 24px 0;
+}
+.dishes-item__title a:hover{
+    text-decoration: none;
+}
+.TimevsType{
+    display: flex;
+    gap: 0 27.75px;
+}
+/* Categories CSS */
+.categories__heading{
+    margin-top: 98px;
+    display: flex;
+    gap: 0 800px;
+    justify-content: space-between;
+}
+.categories__title h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+.button__viewAllCate a{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--red-color);
+    padding: 19px 24px;
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.button__viewAllCate a:hover{
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+.categories__list{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 90px;
+    margin: 80px 0 96px;
+}
+.category-item__title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+/* Footer */
+.contactUs-form{
+    margin-top: 61px;
+}
+.contactUs-title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+}
+.flex_contactForm{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 40px;
+}
+.flex_contactForm .formInput input,
+.flex_contactForm .formInput select{
+    width: 620px;
+    height: 60px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    padding: 18px 0 18px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+}
+.formInput__title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+}
+.messages{
+    border-radius: 5px;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 200px;
+    padding: 20px 0 156px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-contactUs{
+    text-align: center;
+    margin: 32px 0 96px;
+}
+.btn-contactUs button{
+    padding: 20px 63px;
+    background: #000000;
+    border-radius: 10px;
+    color: var(--white-color);
+}
+/* foot */
+.foot{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 32px 0 275px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot_menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+}
+.foot_menu ul a{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+.foot_menu ul a:hover{
+    text-decoration: none;
+    color: var(--red-color);
+}

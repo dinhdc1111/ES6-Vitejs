@@ -2,7 +2,7 @@
 Assignment - ECMA Fall2022
 Assignment - ECMA Fall2022
 # Setting up the ECMA subject environment
-1) Vanilla
+1) Vanilla Js
 - npm init vite@latest my-app -- -- template vanilla
 - cd my-app
 - npm install
@@ -34,3 +34,6 @@ Assignment - ECMA Fall2022
     indent: ['error', 4],
     'eol-last': ['error', 'never'],
   },
+3) Other
+- Install extension in VScode : es6-string-html
+- Use /*html*/ -> Use to highlight code template string `...`;

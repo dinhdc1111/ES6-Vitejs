@@ -1,6 +1,14 @@
+import Banner from "../components/banner";
+import Footer from "../components/footer";
+import Header from "../components/header";
+
 const HomePage = {
     render() { // method render()
-        return `<h1>Home Page</h1>`;
+        return `
+            ${Header.render()}
+            ${Banner.render()}
+            ${Footer.render()}
+        `;
     },
 };
 export default HomePage;
