@@ -1,6 +1,8 @@
 const formContact = {
     render() {
         return /* html */ `
+        </main>
+        <footer class="footer">
         <section class="contactUs">
         <h1 class="contactUs-title">Contact us</h1>
         <form action="" class="contactUs-form">

@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import Banner from "../components/banner";
 import Footer from "../components/footer";
+import formContact from "../components/formContact";
 
 const HomePage = {
     render() { // method render()
@@ -138,6 +139,7 @@ const HomePage = {
                     </div>
                 </div>
             </section>
+            ${formContact.render()}
             ${Footer.render()}
         `;
     },

@@ -1,11 +1,8 @@
-import formContact from "./formContact";
-
 const Footer = {
     render() {
         return /* html */ `
         </main>
         <footer class="footer">
-        ${formContact.render()}
             <div class="foot">
                 <div class="foot_logo">
                     <img src="./assets/images/Logo.png" alt="#">

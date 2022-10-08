@@ -21,13 +21,13 @@ const ProductPage = {
                 </ul>
             </aside>
             <section class="related_products">
-                <div class="related_products-list">
-                    ${ListProduct.map((product) => `
-                        <div class="related_products-item">
-                            <a href="/products/${product.id}"><img class="related_products__image" src="${product.image}" alt="Image Products"></a>
-                            <h5 class="related_products__title">${product.name}</h5>
-                            <h3 class="related_products-price">$${product.price}</h3>
-                            <button class="related_products-btnAdd">Add To Cart</button>
+                <div class="related_products-list-PageProducts">
+                    ${ListProduct.map((product) => /* html */ `
+                        <div class="related_products-item-PageProducts">
+                            <a href="/products/${product.id}"><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></a>
+                            <a href="/products/${product.id}"><h5 class="related_products__title-PageProducts">${product.name}</h5></a>
+                            <a href="/products/${product.id}"><h3 class="related_products-price">$${product.price}</h3></a>
+                            <button class="related_products-btnAdd-PageProducts">Add To Cart</button>
                         </div>`).join("")}
                 </div>
             </section>
