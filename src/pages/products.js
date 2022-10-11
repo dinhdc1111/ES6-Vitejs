@@ -27,7 +27,7 @@ const ProductPage = {
                             <a href="/products/${product.id}"><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></a>
                             <a href="/products/${product.id}"><h5 class="related_products__title-PageProducts">${product.name}</h5></a>
                             <a href="/products/${product.id}"><h3 class="related_products-price">$${product.price}</h3></a>
-                            <button class="related_products-btnAdd-PageProducts">Add To Cart</button>
+                            <a href="/products/${product.id}"><button class="related_products-btnAdd-PageProducts">Add To Cart</button></a>
                         </div>`).join("")}
                 </div>
             </section>

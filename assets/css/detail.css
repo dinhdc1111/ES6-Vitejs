@@ -46,6 +46,8 @@
 }
 .detailed_information__image img{
     width: 620px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 /* Related Products CSS */
 .related_products{
