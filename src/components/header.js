@@ -21,8 +21,8 @@ const Header = {
                     <a href="#"><img src="./assets/images/Cart.png" alt="Cart"></a>
                 </div>
                 <div class="auth">
-                    <a class="signin" href="./signin.html">Sign In</a>
-                    <a class="signup" href="./signup.html">Sign Up</a>
+                    <a class="signin" href="/signin">Sign In</a>
+                    <a class="signup" href="/signup">Sign Up</a>
                 </div>
             </div>
         </header>
