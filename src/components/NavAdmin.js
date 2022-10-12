@@ -7,7 +7,7 @@ const NavAdmin = {
             </div>
             <div class="menu-items">
                 <ul class="nav-links">
-                    <li><a href="#">
+                    <li><a href="/admin/dashboard">
                         <i class="fa-solid fa-house-user"></i>
                             <span class="link-name">Dashboard</span>
                         </a></li>
@@ -15,7 +15,7 @@ const NavAdmin = {
                         <i class="fa-solid fa-cart-shopping"></i>
                             <span class="link-name">Categories</span>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="/admin/products">
                         <i class="fa-brands fa-product-hunt"></i>
                             <span class="link-name">Products</span>
                         </a></li>
