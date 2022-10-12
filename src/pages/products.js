@@ -1,9 +1,11 @@
 import Footer from "../components/footer";
-import ListProduct from "../data/products";
+import { getAll } from "../api/products";
 import Header from "../components/header";
 
 const ProductPage = {
-    render() {
+    async render() {
+        const ListProduct = (await getAll()).data;
+        console.log(ListProduct);
         return /* html */ `
         ${Header.render()}
         <section class="banner-products">

@@ -29,7 +29,7 @@ const AdminProductsPage = {
                                             <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i><span>Add New User</span></a>
                                     </div>
                                 </div>
-                                <table class="table table-striped table-hover">
+                                <table class="table table-striped table-hover text-center">
                                     <thead>
                                         <tr>
                                             <th>ID</th>

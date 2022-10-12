@@ -16,7 +16,7 @@ const NavAdmin = {
                             <span class="link-name">Categories</span>
                         </a></li>
                     <li><a href="/admin/products">
-                        <i class="fa-brands fa-product-hunt"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
                             <span class="link-name">Products</span>
                         </a></li>
                     <li><a href="#">
@@ -30,7 +30,7 @@ const NavAdmin = {
                 </ul>
 
                 <ul class="logout-mode">
-                    <li><a href="#">
+                    <li><a href="/">
                         <i class="fas fa-sign-out-alt"></i>
                             <span class="link-name">Logout</span>
                         </a></li>
