@@ -5,7 +5,6 @@ import Header from "../components/header";
 const ProductPage = {
     async render() {
         const ListProduct = (await getAll()).data;
-        console.log(ListProduct);
         return /* html */ `
         ${Header.render()}
         <section class="banner-products">
@@ -27,8 +26,8 @@ const ProductPage = {
                     ${ListProduct.map((product) => /* html */ `
                         <div class="related_products-item-PageProducts">
                             <a href="/products/${product.id}"><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></a>
-                            <a href="/products/${product.id}"><h5 class="related_products__title-PageProducts">${product.name}</h5></a>
-                            <a href="/products/${product.id}"><h3 class="related_products-price">$${product.price}</h3></a>
+                            <a href="/products/${product.id}"><h5 class="related_products__title-PageProducts">${product.title}</h5></a>
+                            <a href="/products/${product.id}"><h3 class="related_products-price">${product.content}</h3></a>
                             <a href="/products/${product.id}"><button class="related_products-btnAdd-PageProducts">Add To Cart</button></a>
                         </div>`).join("")}
                 </div>

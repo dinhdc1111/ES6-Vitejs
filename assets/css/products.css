@@ -42,7 +42,7 @@ a:hover{
 }
 .related_products__image-list-PageProducts{
     border-radius: 20px;
-    max-width: 290px;
+    width: 290px;
 }
 .related_products__title-PageProducts{
     font-weight: 600;

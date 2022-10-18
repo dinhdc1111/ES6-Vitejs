@@ -1,6 +1,14 @@
-import axios from "axios";
+import instance from "./instance";
 
-const instance = axios.create({
-    baseURL: "https://60371dc45435040017721a02.mockapi.io/",
-});
-export const getAll = () => instance.get(`/products`);
+export const getAll = () => {
+    const url = `/products`;
+    return instance.get(url);
+};
+export const get = (id) => {
+    const url = `products/${id}`;
+    return instance.get(url);
+};
+export const add = (newProduct) => {
+    const url = `products`;
+    return instance.post(url, newProduct);
+};

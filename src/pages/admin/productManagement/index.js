@@ -26,7 +26,7 @@ const AdminProductsPage = {
                             <div class="table-wrapper">
                                 <div class="table-title">
                                     <div class="row">
-                                            <a href="#" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i><span>Add New User</span></a>
+                                            <a href="/admin/products/add" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i><span>Add New User</span></a>
                                     </div>
                                 </div>
                                 <table class="table table-striped table-hover text-center">
