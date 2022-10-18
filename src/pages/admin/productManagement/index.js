@@ -1,8 +1,9 @@
+import { getAll, remove } from "../../../api/products";
 import NavAdmin from "../../../components/NavAdmin";
-import ListProduct from "../../../data/products";
 
 const AdminProductsPage = {
-    render() {
+    async render() {
+        const ListProduct = (await getAll()).data;
         return /* html */ `
             ${NavAdmin.render()}
             <section class="dashboard">
@@ -26,29 +27,30 @@ const AdminProductsPage = {
                             <div class="table-wrapper">
                                 <div class="table-title">
                                     <div class="row">
-                                            <a href="/admin/products/add" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i><span>Add New User</span></a>
+                                            <a href="/admin/products/add" class="btn btn-secondary"><i class="fa-solid fa-cart-plus"></i><span>Thêm món</span></a>
                                     </div>
                                 </div>
                                 <table class="table table-striped table-hover text-center">
                                     <thead>
                                         <tr>
-                                            <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                            <th>Image</th>
-                                            <th>Action</th>
+                                            <th>STT</th>
+                                            <th>Tên</th>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>Ảnh</th>
+                                            <th>Hành động</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         ${ListProduct.map((product, index) => /* html */ `
                                         <tr>
                                             <td>${index + 1}</td>
-                                            <td>${product.name}</td>
+                                            <td>${product.title}</td>
                                             <td>${product.price}$</td>
-                                            <td><img class="related_products__image-list-PageProducts" src="../${product.image}" alt="Image Products"></td>
+                                            <td><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></td>
                                             <td>
                                                 <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="fa-solid fa-gear"></i></a>
-                                                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash"></i></a>
+                                                <a href="#" data-id="${product.id}" class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash"></i></a>
                                             </td>
                                             </tr>
                                         `).join("")}
@@ -74,6 +76,18 @@ const AdminProductsPage = {
                 </div>
     </section>
         `;
+    },
+    afterRender() {
+        const btns = document.querySelectorAll(".delete");
+        btns.forEach((btn) => {
+            const { id } = btn.dataset;
+            btn.addEventListener("click", () => {
+                const confirm = window.confirm("Bạn có chắc muốn xóa?");
+                if (confirm) {
+                    remove(id);
+                }
+            });
+        });
     },
 };
 export default AdminProductsPage;
