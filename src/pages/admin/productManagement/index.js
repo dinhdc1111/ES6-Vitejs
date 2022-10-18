@@ -47,6 +47,7 @@ const AdminProductsPage = {
                                             <td>${index + 1}</td>
                                             <td>${product.title}</td>
                                             <td>${product.price}$</td>
+                                            <td>${product.quantity}</td>
                                             <td><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></td>
                                             <td>
                                                 <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="fa-solid fa-gear"></i></a>
