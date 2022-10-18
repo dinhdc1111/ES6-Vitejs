@@ -9,7 +9,10 @@ const AddNewProduct = {
         <section>
         <form class="mx-auto mt-5" style= "width:500px" id="add-new">
             <div class="form-outline mb-4">
-                <input type="text" id="title" class="form-control" placeholder="Title name"/>
+                <input type="text" id="title" class="form-control" placeholder="Food name"/>
+            </div>
+            <div class="form-outline mb-4">
+                <input type="number" id="price" class="form-control" placeholder="Food price"/>
             </div>
             <div class="mb-3">
                 <input class="form-control" type="file" id="formFile">
@@ -39,6 +42,7 @@ const AddNewProduct = {
             });
             const newProduct = {
                 title: document.querySelector("#title").value,
+                price: document.querySelector("#price").value,
                 image: data.url,
                 content: document.querySelector("#content").value,
             };

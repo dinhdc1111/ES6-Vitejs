@@ -12,7 +12,7 @@ const productDetail = {
                 <h1 class="detailed_information__content-title">
                     ${product.title}
                 </h1>
-                <h2 class="detailed_information__content-price">$30</h2>
+                <h2 class="detailed_information__content-price">$${product.price}</h2>
                 <p class="detailed_information__content-desc">
                     ${product.content}
                 </p>
