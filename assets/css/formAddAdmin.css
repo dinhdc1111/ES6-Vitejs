@@ -1,0 +1,135 @@
+#title,
+#quantity,
+#price,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    caret-color: #007bff;
+}
+:focus-visible{
+    outline: none;
+}
+.content{
+    min-width: 450px;
+}
+#result{
+    min-width: 1120px;
+}
+#form{
+    /* box-shadow: https://getcssscan.com/; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 40px;
+}
+
+.card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#add {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+.form_left,
+.form_right{
+    width: 50%;
+}
+.input-control{
+    position: relative;
+}
+.error{
+    color: #ff3860;
+    font-size: 13px;
+}
+.input-control.success input,
+.food_typeSuccess,
+.descriptionSuccess{
+    border-color:#09c472 ;
+    background-color: rgb(238 255 223 / 30%);;
+}
+.input-control.success .icon-success{
+    display: block;
+    color: #09c472;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.input-control.error input,
+.food_typeError,
+.descriptionError{
+    border-color: #ff3860 ;
+    background: rgb(255 191 191 / 30%);
+}
+.input-control.error .icon-warnning{
+    display: block;
+    color: #ff3860;
+}
+.input-control span{
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    display: none;
+}
+input#image{
+    display: none;
+}
+input#image + label{
+    background-color: #007bff;
+    padding: 12px;
+    color: #ffffff;
+}
+input#image + label:hover{
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+}
+.linkImage,
+.fileName{
+    display: inline-block;
+}
+.fileName{
+    font-weight: 100;
+}
+.imagePreview{
+    text-align: center;
+    border: 1px dashed #ccc;
+    margin: 10px 0;
+    padding: 71px;
+    min-width: 450px;
+}
+.imagePreview p{
+    margin: 33px 0 20px;
+}
+#imagePreview{
+    width: 500px;
+}
+.title_image{
+    text-align: center;
+    margin-top: 30px;
+}
+.radio_button{
+    text-align: center;
+    margin-top: 20px;
+}
+.radio_button input{
+    margin: 7px;
+}
+
+/* table */
+.table{
+    text-align: center;
+}
+.card-header{
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+}
