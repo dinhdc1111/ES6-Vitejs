@@ -1,4 +1,4 @@
-const ListProduct = [
+const ListProduct1 = [
     {
         id: 1,
         name: "Big and Juicy Wagyu Beef Cheeseburger",
@@ -55,4 +55,4 @@ const ListProduct = [
     },
 ];
 
-export default ListProduct;
+export default ListProduct1;
