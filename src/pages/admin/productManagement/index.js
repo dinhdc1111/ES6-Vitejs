@@ -50,7 +50,7 @@ const AdminProductsPage = {
                                             <td>${product.quantity}</td>
                                             <td><img class="related_products__image-list-PageProducts" src="${product.image}" alt="Image Products"></td>
                                             <td>
-                                                <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="fa-solid fa-gear"></i></a>
+                                                <a href="/admin/products/${product.id}/update" class="settings" title="Settings" data-toggle="tooltip"><i class="fa-solid fa-gear"></i></a>
                                                 <a href="#" data-id="${product.id}" class="delete" title="Delete" data-toggle="tooltip"><i class="fa-solid fa-trash"></i></a>
                                             </td>
                                             </tr>
